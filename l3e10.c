@@ -23,12 +23,21 @@ void main (){
     scanf("%d", &dy);
     adicao(nx,dx,ny,dy,&nv,&dv);
     printf("%d/%d", nv,dv);
+    subtracao(nx,dx,ny,dy, &nv, &dv);
+    printf("%d/%d", nv,dv);
     getchar();
 }
 
 void adicao (int nx, int dx, int ny, int dy, int *nv, int *dv){
 
     *nv= (nx*dy+ny*dx);
+    *dv = (dx*dy);
+
+}
+
+void subtracao (int nx, int dx, int ny, int dy, int *nv, int *dv){
+
+    *nv= (nx*dy-ny*dx);
     *dv = (dx*dy);
 
 }
