@@ -1,0 +1,4 @@
+Cliente: 'Vieira', Data: 23/10/2023 
+, Venda: 56738.980469Cliente: 'Bruno', Data: 6/11/2023 
+, Venda: 167289.984375Cliente: 'Carlos Augusto', Data: 11/7/2023 
+, Venda: 2818.760010
