@@ -1,0 +1,16 @@
+enum TipoDeTel {
+    residencial,
+    comercial,
+    movel
+};
+
+struct telefone { 
+    int ddd;
+    int numero;
+    enum TipoDeTel tipo;
+};
+
+struct contato {
+    char nome[50];
+    struct telefone telef;
+};

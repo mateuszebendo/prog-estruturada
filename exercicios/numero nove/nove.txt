@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct TASCII {
+    int codigo;
+    char caractere;
+};
+
+int main() {
+    struct TASCII ascii;
+    FILE *arquivo;
+    char nomeArquivo[80];
+    int count = 0;
+
+    printf("Informe o nome (com caminho) do arquivo a ser analisado: ");
+    gets(nomeArquivo);
+    arquivo = fopen(nomeArquivo, "rb");
+
+    if (arquivo == NULL) {
+        printf("Erro ao abrir o arquivo.\n");
+        return 1;
+    }
+
+    while (fread(&ascii, sizeof(struct TASCII), 1, arquivo)) {
+        count++;
+    }
+
+    fclose(arquivo);
+
+    printf("Este arquivo possui %d registros\n", count);
+
+    return 0;
+}

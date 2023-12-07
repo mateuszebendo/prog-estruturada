@@ -1,0 +1,12 @@
+enum sexo {
+ masculino, 
+ feminino,
+};
+
+enum estadoCivil { 
+ solteiro, 
+ casado,
+ viuvo, 
+ separado, 
+ desquitado,
+};

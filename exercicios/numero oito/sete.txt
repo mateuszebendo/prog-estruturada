@@ -1,0 +1,11 @@
+struct setor { 
+ int fileira; 
+ char coluna;
+};
+
+struct ginasio {
+ struct setor verde; 
+ struct setor amarelo; 
+ struct setor azul;
+ struct setor branco;
+};
