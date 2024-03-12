@@ -1,4 +1,0 @@
-struct endereco {
- char logradouro[50], complemento[50], bairro[30], cidade[30], estado[3];
- int cep, numero;
-};

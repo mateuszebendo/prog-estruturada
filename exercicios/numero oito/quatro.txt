@@ -1,3 +1,0 @@
-struct r2 {
- double x, y;
-};

@@ -1,3 +1,0 @@
-struct racional {
- int numerador, denominador; 
-};

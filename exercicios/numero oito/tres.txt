@@ -1,4 +1,0 @@
-struct posicao {
- int linha;
- char coluna;
-};
